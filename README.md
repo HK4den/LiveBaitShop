@@ -11,4 +11,4 @@ A redesigned, mobile-friendly, and accessible version of Howard’s Lakeside Gen
 [https://ozarktechwebdev.com/kaden/baitshop/](https://ozarktechwebdev.com/kaden/baitshop/)
 
 ### Screenshot
-![Screenshot of Live Bait Shop](screenshot.png)
+![Screenshot of Live Bait Shop](BaitScreenshot.png)
