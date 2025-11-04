@@ -1,0 +1,262 @@
+/* Box everythning!!!! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 8px;
+    font-size: 20pt;
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 10px;
+    font-style: oblique
+}
+
+/* Makes the background a pretty lake picture that covers it all and is fixed, and changes the height of the lines */
+body {
+    line-height: 1.6;
+    background: url("images/lakewater.jpg") center fixed;
+    background-size: cover;
+}
+
+/* Everything is this new font now */
+html,
+body {
+    font-family: "M PLUS Rounded 1c", system-ui, -apple-system, "Segoe UI",
+        Roboto, Ubuntu, "Noto Sans", Cantarell, Arial, sans-serif;
+}
+
+/* Makes the header a flexbox, has the stuff inside centered, gives a bg color, gives a bottom border, and gives a bit of padding + a gap */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b1c7b2;
+    border-bottom: 3px solid #120b07;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Makes the logo small so it fits */
+.logo {
+    height: 60px;
+    border-radius: 30%;
+    border: .5pt solid black;
+}
+
+/* Stickies the nav, makes it flexbox, center justifies the stuff with top/bottom borders, gives a bg, and adds some padding + a big gap */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #b1c7b2;
+    border-top: 2px solid #120b07;
+    border-bottom: 2px solid #120b07;
+    padding: 10px;
+    gap: 20px;
+}
+
+/* Makes the links in the nav bold + cooler colors */
+.navbar a {
+    color: #404530;
+    font-weight: bold;
+}
+
+/* Makes the links cooler colors when hovered */
+.navbar a:hover {
+    color: #59593b;
+}
+
+/* Makes the links cooler colors when selected */
+.navbar a:visited {
+    color: #4a422f;
+}
+
+/* Accessibility stuf for the nav links when selected with tab and prob accessibility tools, idk i dont have those tools to use it on it. */
+.navbar a:focus {
+    outline: 2px dashed #120b07;
+    outline-offset: 3px;
+}
+
+/* Main content area */
+.main-content {
+    background-color: rgba(179, 167, 155, 0.856);
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #120b07;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #b1c7b2;
+    border-top: 3px solid #120b07;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* Makes the links cooler colors in the footer */
+.footer a {
+    color: #404530;
+    text-decoration: none;
+}
+
+/* Makes the links cooler colors when hovered */
+.footer a:hover {
+    color: #59593b;
+}
+
+/* Makes the links cooler colors when visited */
+.footer a:visited {
+    color: #4a422f;
+}
+
+/* Home sections */
+.welcome,
+.hours,
+.video {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Makes it fit a certain size and have a max size and gives margins that center it */
+.video-wrap {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 12px;
+}
+
+/* makes the display block, has it fit 100% inside of itself, aspect ratio stuff so its normal, has a border, and its rounded a bit! */
+.video-wrap iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 3px solid #120b07;
+    border-radius: 10px;
+}
+
+/* Makes the store's photo fit a certain size of the block, have a max width, have margins, a border, and a little rounded */
+.store-photo {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    margin: 12px;
+    border: 3px solid #120b07;
+    border-radius: 10px;
+}
+
+/* New font yay */
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Helps you tell the difference between each area with an outline kinda thingie and centers everything again in a flex column*/
+.welcome,
+.hours,
+.video {
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tables for Goods & Services */
+.table-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* makes the captions for each bait table be bold, underlined, and have margins */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #120b07;
+    background-color: rgba(177, 199, 178, 0.3);
+    border-radius: 8px;
+}
+
+/* Makes the caption above tables bold */
+caption {
+    font-weight: bold;
+    margin: 8px 0;
+    text-decoration: underline;
+}
+
+/* makes table heading and data have some padding, a border, and be left aligned */
+th,
+td {
+    padding: 6px 10px;
+    border: 1px solid #120b07;
+    text-align: left;
+}
+
+/*  */
+th {
+    background-color: #b1c7b2;
+}
+
+/* Makes the little disclaimer under the tables have a margin and be brown with a bit more boldness */
+.disclaimer {
+    margin-top: 12px;
+    color: #4d260c;
+    font-weight: 700;
+}
+
+/* makes the little bait note be italic and have a bit of a margin to accentuate it. */
+.note {
+    font-style: italic;
+    margin: 6px 0 12px;
+}
+
+/* Makes everything within this section be centered, gives it a bg color thats rounded, and gives the area padding and margins */
+.goods-section {
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Some stuff so the spool guy looks good */
+.spool-photo {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px;
+    border: 3px solid #120b07;
+    border-radius: 10px;
+}
+
+/* Tablet size and above layout changes for like readability */
+@media (min-width:720px) {
+
+    /* Gives more space for the main content */
+    .main-content {
+        max-width: 1100px;
+        padding: 24px;
+    }
+
+    /* Makes the tables wrap in two columns */
+    .table-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* Makes h2s bigger font wise */
+    h2 { font-size: 24pt; }
+}
